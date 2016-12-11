@@ -1,0 +1,143 @@
+
+#headbanner { 
+  
+
+   height: 70px;
+   background-color: 657071;
+   border: none;
+   margin-bottom: 15px;
+   width: 100%;
+   left: 0;
+
+    margin-top: 0px;
+ margin-right: 0px;
+
+ margin-left: 0px
+}
+
+#hometext {
+   padding-left: 25px;
+   padding-right:15px;
+   padding-top: 25px;
+   margin-right: 200px;
+   margin-bottom: 0;
+}
+
+#blog {
+   ;
+   width: 100%;
+}
+
+h1.logo {
+   
+   color:white;
+   font-size:18pt;
+   font-family:arial;
+   font-weight: 100;
+   padding-left: 25px;
+   padding-top: 25px;
+   
+}
+
+h1.nav {
+   position:absolute;
+   text-align: right;
+   top: 0;
+   font-size: 8pt;
+   top:25;
+   right: 25px;
+
+}
+
+p.heavy {
+
+   font-family: arial;
+   color: grey;
+   font-size: 12pt;
+
+}
+
+p.blog {
+   padding-bottom: 50px;
+   width: 230px; height: 200px; 
+   padding-left: 15px;
+   float: left;
+   font-size: 10pt;
+   color: grey;
+}
+
+p.smallblog {
+    padding-bottom: 50px;
+   width: 230px; height: 200px; 
+   padding-left: 15px;
+   font-size: 8pt;
+   color: grey;
+
+
+}
+
+
+img.main { 
+      width: 70%; height:65%; align:"right"; 
+      padding-right: 25px;
+      padding-bottom: 4px;
+}
+
+img.blog {
+   width: 200px; height: 200px; 
+   padding-left: 40px;
+   float: left;
+}
+
+h1.nav { 
+   font-family: arial;
+   color: white;
+   text-align: right;
+
+
+}
+
+a.header {
+   color: white;
+   text-align:center;
+   font-family: arial;
+   margin-left: 30px;
+   font-weight:100;
+   text-decoration:none;
+}
+
+p.heading {
+   color: grey;
+   font-size: 12pt;
+   font-family: arial;
+   font-weight: bold;
+}
+
+p.normal {
+   color: grey;
+   font-size: 10pt;
+   font-family: arial;
+   padding-bottom: 200px;
+}
+
+#footbanner { 
+
+
+  position:fixed;
+    bottom:0;
+   
+   width: 100%;
+   height: 65px;
+   background-color: 657071;
+   border: none;
+   margin-top: 15px;
+   
+}
+
+
+p.footer {
+   color: white;
+   font-size: 12pt;
+   font-family: arial;
+}
+   
