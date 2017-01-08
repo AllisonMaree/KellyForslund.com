@@ -1,6 +1,5 @@
 
 * { 
-  border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 0; padding: 0; 
   box-sizing: border-box;
 }
@@ -9,7 +8,6 @@
 
    height: 70px;
    background-color: 657071;
-   border: none;
    margin-bottom: 15px;
    width: 100%; 
 }
@@ -40,13 +38,13 @@
 #blank_spacer {}
 
 
-h1.logo {
+#logo {
    color:white;
    font-size:18pt;
    font-family:tahoma;
    font-weight: 100;
-   padding-left: 25px;
-   padding-top: 25px;   
+   padding-left: 65px;
+   padding-top: 10px;   
 }
 
 h1.nav {
@@ -139,6 +137,27 @@ a.header {
    font-weight:100;
    text-decoration:none;
 }
+
+ul#fpnav{
+   list-style-type: none;
+   float: right;
+}
+
+ul#fpnav li{
+   float: left;
+}
+
+ul#fpnav li a{
+   padding: 18px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+}
+
+
+
+
 
 
 
