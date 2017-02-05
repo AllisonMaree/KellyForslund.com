@@ -1,0 +1,29 @@
+{
+	"tables": {
+		"battista": {
+			"type": "dining",
+			"shape": "rectangle",
+			"size": "large",
+			"style": "modern"
+		},
+		"baldwin": {
+			"type": "coffee",
+			"shape": "square",
+			"size": "medium",
+			"style": "transitional"
+		},
+		"capri": {
+			"type": "cocktail",
+			"shape": "round",
+			"size": "small",
+			"style": "modern"
+		},
+
+		"continental": {
+			"type": "dining",
+			"shape": "round",
+			"size": "large",
+			"style": "modern"
+		}
+	}
+}
