@@ -1,6 +1,5 @@
 /*
 * { 
-  border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 0; padding: 0; 
   box-sizing: border-box;
 }
@@ -8,7 +7,6 @@
 #headbanner { 
    height: 60px;
    background-color: 657071;
-   border: none;
    margin-bottom: 15px;
    width: 100%; 
 }
@@ -39,20 +37,27 @@
 #blank_spacer {}
 
 #fpnav{
-   float: right;
-   margin: 15px 70px;
+   float right;
 }
 #lineListNav {
    padding-top: 20px;
 }
-#logo
-   {width: 29%;
-      margin: 10px 29px;}
+
+#logo {
+   color:white;
+   font-size:18pt;
+   font-family:tahoma;
+   font-weight: 100;
+   padding-left: 65px;
+   padding-top: 10px;   
+}
+
 
 #line {
    font-size: 8px;
    color:#90887a; 
 }
+
 h1.nav {
    font-size: 8pt;
    color:black;
@@ -171,12 +176,30 @@ a.header:active {
    color: white;
 }
 
-a.header:hover {
+
+li.mainPage a:hover {
    color: white;
 }
 
 a.header:active {
    color: white;
+}
+
+#fpnav{
+   list-style-type: none;
+   float: right;
+}
+
+#fpnav li{
+   float: left;
+}
+
+#fpnav li a{
+   padding: 18px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: #d6cec0;
 }
 
 a.lineList {
