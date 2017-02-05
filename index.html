@@ -7,13 +7,16 @@
 
     <title>KELLY FORSLUND INC</title>
 
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!--      custom css to add or overwrite bootstrap -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+
+    <script src="JS/script.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -25,25 +28,32 @@
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
+           
+           <div id="headbanner">
+                <a href="http://www.kellyforslund.com">
+               <img id="logo" src="http://kellyforslund.net/wp-content/uploads/2013/12/website_logo_SMALL_WHITE.png">
+                </a>
 
-            <div id="headbanner">
+         <ul id="fpnav">
+             <li class="mainPage">
+                 <a class="header" href="index.html">HOME</a>
+              </li>
+             <li class="mainPage">
+                 <a class="header" href="linelistpage.html">LINE LIST</a>
+             </li>
+             <li class="mainPage">
+                 <a class="header" href="http://kellyforslund.net/by-category/">BY CATEGORY</a>
+              </li>
+             <li class="mainPage">
+                 <a class="header" href="contact.html">CONTACT</a>
 
-                <h1 class="logo">KELLY FORSLUND</h1>
+            </li>
+       </ul>
 
 
             </div>
-
-
-            <h1 class="nav">
-
-    <a class="header" href="http://kellyforslund.net/">HOME</a>
-    <a class="header" href="http://kellyforslund.net/line-list/">LINE LIST</a></li>
-    <a class="header" href="http://kellyforslund.net/by-category/">BY CATEGORY</a>
-    <a class="header" href="http://kellyforslund.net/contact/">CONTACT</a>
-
-</h1>
 
         </div>
     </div>
@@ -67,7 +77,7 @@
 
             <div class="col-md-9">
 
-                <img class="main" src="images/Home Page image.jpg">
+                <img id="main" src="images/HomePage2.jpg">
 
             </div>
 

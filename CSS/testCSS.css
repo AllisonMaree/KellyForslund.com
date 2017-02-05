@@ -1,0 +1,161 @@
+
+* { 
+  margin: 0; padding: 0; 
+  box-sizing: border-box;
+}
+
+#headbanner { 
+
+   height: 70px;
+   background-color: 657071;
+   margin-bottom: 15px;
+   width: 100%; 
+}
+
+#hometext {
+   padding-left: 25px;
+   padding-right:15px;
+   padding-top: 25px;
+   margin-right: 200px;
+   margin-bottom: 10;
+   width:166px;
+   float: left;
+   margin-left: 20px;
+}
+
+#blog {width:100%;}
+
+#footbanner { 
+   display:block;
+   bottom:0;
+   width: 100%;
+   height: 65px;
+   background-color: 657071;
+   border: none;
+   margin-top: 15px; 
+}
+
+#blank_spacer {}
+
+
+#logo {
+   color:white;
+   font-size:18pt;
+   font-family:tahoma;
+   font-weight: 100;
+   padding-left: 65px;
+   padding-top: 10px;   
+}
+
+h1.nav {
+  
+   font-size: 8pt;
+ 
+   color:black;
+   font-family: tahoma, arial;
+   background-color:;
+   
+}
+
+p.heavy {
+   font-family: tahoma, arial;
+   color: grey;
+   font-size: 12pt;
+}
+
+p.blog {
+   padding-bottom: 50px;
+   width: 230px; height: 200px; 
+   padding-left: 15px;
+   float: left;
+   font-size: 8pt;
+   color: grey; 
+}
+
+p.bigblog {
+   width: 230px; height: 15px; 
+   padding-left: 15px;
+   font-size: 10pt;
+   color: grey;
+}
+
+p.heading {
+   color: grey;
+   font-size: 12pt;
+   font-family: tahoma, arial;
+   font-weight: bold;
+}
+
+p.normal {
+   color: #90887a;
+   font-size: 12pt;
+   font-family: tahoma, arial;
+   margin-right: 0;
+   padding-right: 0;
+   line-height: 16px;
+   float: left;
+   width: 166px;
+}
+
+p.bigger {
+   font-size: 14px;
+   line-height: 18px;
+   color: #90887a;
+   font-family: tahoma, arial;
+   float: left;
+   width: 100%;
+   position: relative;
+   left: 25px;
+   padding-right: 35px;
+}
+
+p.footer {
+   color: #e4e4e4;
+   font-size: 12pt;
+   font-family: tahoma, arial;
+}
+
+img.blog {
+   width: 200px; height: 200px; 
+   padding-left: 40px;
+   float: left;
+}
+
+img.main {
+   width: 100%;
+   height: 60%;
+   overflow: visible;
+   float: right;
+   margin: 0px;
+   margin-left: 0px;
+}
+   
+a.header {
+   color: black;
+   font-family: tahoma, arial;
+   margin-left: 30px;
+   font-weight:100;
+   text-decoration:none;
+}
+
+ul#fpnav{
+   list-style-type: none;
+   float: right;
+}
+
+ul#fpnav li{
+   float: left;
+}
+
+ul#fpnav li a{
+   padding: 18px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+}
+
+
+
+
+
