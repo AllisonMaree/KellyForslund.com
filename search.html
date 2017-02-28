@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!--      custom css to add or overwrite bootstrap -->
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Styles.css" />
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="JS/script.js"></script>
 
@@ -28,6 +30,8 @@
 </head>
 
 <body>
+
+<!-- BANNER AND NAVIGATION -->
 
     <div class="container-fluid">
         <div class="row">
@@ -58,12 +62,59 @@
 
         </div>
     </div>
+
+<!-- SEARCH SECTION -->
+
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <form action="demo_form.asp" id="search" >
-        Search <input type="text"><br>
-      </form>
+    <div class="col-md-5">
+
+    <div>
+
+      <h3>I am searching for...</h3>
+      <button type="button" class="searchButton">Tables</button>
+      <button type="button" class="searchButton">Chairs</button>
+      <button type="button" class="searchButton">Sofas</button>
+      <h4>Choose your options:</h4>
+
+    </div>
+
+     <div>
+
+      <p>Material:</p>
+      <button type="button" class="searchbutton">Wood</button>
+      <button type="button" class="searchbutton">Metal</button>
+      <button type="button" class="searchbutton">Other</button>
+
+      </div>
+
+      <div>
+
+      <p>Style:</p>
+      <button type="button" class="searchbutton">Traditional</button>
+      <button type="button" class="searchbutton">Modern</button>
+      <button type="button" class="searchbutton">Transitional</button>
+
+      </div>
+
+      <div>
+      
+      <p>Size:</p>
+      <button type="button" class="searchbutton">Small</button>
+      <button type="button" class="searchbutton">Medium</button>
+      <button type="button" class="searchbutton">Large</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS SECTION -->
+
+    <div class="col-md-7" id="resultsdiv">
+      <h3>Results Page</h3>
+      <h4></h4>
     </div>
   </div>
 </div>

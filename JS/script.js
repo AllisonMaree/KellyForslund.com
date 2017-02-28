@@ -1,13 +1,27 @@
-var image = document.getElementById("main");
-var src = ["homePage.jpg","homePage2.jpg","contactPageImage.jpg","glant.jpg","lineListImag.jpg",];
+$( document ).ready(function() {
+    $.getJSON("http://localhost:8888/KellyForslund.com/JS/JSON/data.json", function(data){
+        console.log(data);
+    }); 
+});
+	
+    // $.ajax({
+    //     dataType: 'json',
+    //     beforeSend : function() {
+    //        console.log('Before Ajax Request Starts !!');
+    //     },
+    //     success: function(data) {
+    //         console.log(data);
+    //         alert(data);
+    //         document.write(data);
+    //     },
+    //     error : function(jqXHR, textStatus, errorThrown) {
+    //          alert("Error occurred: " + errorThrown);
+    //     },
+    //      afterSend : function() {
+    //        console.log('Ajax Request Complete  !!');
+    //     },
+    //     url: 'localhost8080/KellyForslund.com/JS/JSON/data.json'
+    // });  
 
-var step=0
-    function slideit() { 
-        image.src = src[step];
-        if(step<4){
-            step++;
-        }else{
-            step=1;
-        }
-    }        
-    setInterval(slideit,5000);
+
+ 
