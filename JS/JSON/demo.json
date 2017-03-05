@@ -4,36 +4,28 @@
 		"type": "dining",
 		"shape": "rectangle",
 		"size": "large",
-		"style": "modern",
-		"material":"wood"
-		
+		"style": "modern"
 	},
 	{
 		"name": "Baldwin",
 		"type": "coffee",
 		"shape": "square",
 		"size": "medium",
-		"style": "transitdional",
-		"material":"wood"
-		
+		"style": "transitdional"
 	},
 	{
 		"name":"capri",
 		"type": "cocktail",
 		"shape": "round",
 		"size": "small",
-		"style": "modern",
-		"material":"metal"
-		
+		"style": "modern"
 	},
 	{
 		"name":"Continental",
 		"type": "dining",
 		"shape": "round",
 		"size": "large",
-		"style": "modern",
-		"material":"wood"
-
+		"style": "modern"
 	}
 
 ]
