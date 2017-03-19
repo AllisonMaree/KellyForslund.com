@@ -1,15 +1,75 @@
-/*
-* { 
-  margin: 0; padding: 0; 
-  box-sizing: border-box;
+
+/** HEADBANNER **/
+#logo {
+   color:white;
+   font-size:18pt;
+   font-family:tahoma;
+   font-weight: 100;
+   padding-left: 65px;
+   padding-top: 10px;   
 }
-*/
+
 #headbanner { 
    height: 60px;
    background-color: 657071;
    margin-bottom: 15px;
    width: 100%; 
 }
+
+
+#fpnav{
+   list-style-type: none;
+   float: right;
+}
+
+#fpnav li{
+   float: left;
+}
+
+#fpnav li a{
+   padding: 18px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: #d6cec0;
+}
+
+li.mainPage a:hover {
+   color: white;
+}
+
+
+li.mainPage {
+   display: inline;
+   font-style: arial;
+           }
+
+a.header {
+
+   color: #d6cec0;
+   font-family: tahoma, arial;
+   margin-left: 30px;
+   font-weight:100;
+   font-size:11px;
+   text-decoration:none;
+
+}
+
+
+a.header:active {
+   color: white;
+}
+
+a.header:active {
+   color: white;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+   text-decoration:none;
+}
+
+
+/** END HEADBANNER STYLES **/
 
 #hometext {
    padding-left: 25px;
@@ -36,21 +96,11 @@
 
 #blank_spacer {}
 
-#fpnav{
-   float right;
-}
+
 #lineListNav {
    padding-top: 20px;
 }
 
-#logo {
-   color:white;
-   font-size:18pt;
-   font-family:tahoma;
-   font-weight: 100;
-   padding-left: 65px;
-   padding-top: 10px;   
-}
 
 
 #line {
@@ -163,46 +213,6 @@ img.linelist {
    padding: 25px 25px 25px 25px;
 }
    
-a.header {
-
-   color: #d6cec0;
-   font-family: tahoma, arial;
-   margin-left: 30px;
-   font-weight:100;
-   font-size:11px;
-   text-decoration:none;
-
-}
-
-a.header:active {
-   color: white;
-}
-
-
-li.mainPage a:hover {
-   color: white;
-}
-
-a.header:active {
-   color: white;
-}
-
-#fpnav{
-   list-style-type: none;
-   float: right;
-}
-
-#fpnav li{
-   float: left;
-}
-
-#fpnav li a{
-   padding: 18px;
-   display: block;
-   text-align: center;
-   text-decoration: none;
-   color: #d6cec0;
-}
 
 a.lineList {
    font-family: tahoma, arial;
@@ -221,10 +231,6 @@ a.lineListSmall {
 }
 
 
-li.mainPage {
-   display: inline;
-   font-style: arial;
-           }
 li.lineList {
    font-family: tahoma, arial;
    color: #90887a;
@@ -238,9 +244,7 @@ ul {
    list-style-type: none;
 }
 
-a, a:hover, a:visited, a:active, a:link {
-   text-decoration:none;
-}
+
 
 #search {
    text-align:center;
@@ -250,26 +254,3 @@ a, a:hover, a:visited, a:active, a:link {
 
 
 
-/********SEARCH PAGE STYLES************/
-
-#resultsDiv {
-   
-   border-left: solid;
-
-  
-}
-
-#searchDiv {
-   height: 500px;
-}
-
-.searchButton {
-   height: 50px;
-   width: 85px;
-   padding-right: 50px;
-}
-
-div.material {
-   display: none;
-   visibility: hidden;
-}

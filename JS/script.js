@@ -2,13 +2,15 @@ $(document).ready(function() {
 
 	var hot=[];
 
-$("#button_tables").click(function(){
 
 	$.getJSON('/KellyForslund.com/JS/JSON/data.json', function(data){
 
 		 hot = data;
 
-		console.log("You want to search for tables.");
+		//console.log(hot);
+
+$("#button_tables").click(function(){
+
 
 	});
 
@@ -83,6 +85,8 @@ $("#button_side").click(function() {
 		 	 	
 
 		//  	console.log(hot);
+
+
 
 		
 		

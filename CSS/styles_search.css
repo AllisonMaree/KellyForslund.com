@@ -1,0 +1,80 @@
+
+/** HEADBANNER **/
+#logo {
+   color:white;
+   font-size:18pt;
+   font-family:tahoma;
+   font-weight: 100;
+   padding-left: 65px;
+   padding-top: 10px;   
+}
+
+#headbanner { 
+   height: 60px;
+   background-color: 657071;
+   margin-bottom: 15px;
+   width: 100%; 
+}
+
+#fpnav{
+   list-style-type: none;
+   float: right;
+}
+
+#fpnav li{
+   float: left;
+}
+
+#fpnav li a{
+   padding: 18px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: #d6cec0;
+}
+
+li.mainPage a:hover {
+   color: white;
+}
+
+li.mainPage {
+   display: inline;
+   font-style: arial;
+}
+
+a.header {
+   color: #d6cec0;
+   font-family: tahoma, arial;
+   margin-left: 30px;
+   font-weight:100;
+   font-size:11px;
+   text-decoration:none;
+}
+
+a.header:active {
+   color: white;
+}
+
+a.header:active {
+   color: white;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+   text-decoration:none;
+}
+
+/** END HEADBANNER **/
+
+/** MENU **/
+
+p.menu {
+   font-family: arial;
+   font-size: 18px;
+   border-style: none none solid none;
+   border-bottom: 1px solid grey;
+   
+}
+
+/** RESULTS **/
+
+h3 { text-align: center; }
