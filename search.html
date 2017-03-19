@@ -131,19 +131,17 @@
        
         <form ng-submit="search">
 
-         
+         <div ng-repeat="(key, value) in myData | filter: test">{{value}}</div>
         <br>
         <br>
         <!--{{myData.tables[2].type}} -->
 
-      
+        {{myData.size}}
+
+        <div>{{error}}</div>
 
         <input type="search" name='testinput' placeholder="I am searching for...."ng-model="test"/>
         <input type="submit" name='testsubmit' ng-click="search()" />
-
-         <div ng-hide=ng-repeat="(key, value) in myData | filter: test">{{value}}</div>
-
-        <div>{{error}}</div>
         </form>
 
         </div>
