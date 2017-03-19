@@ -86,16 +86,16 @@
 
       <p class="menu">Material</p>
      <form>
-      <input type="checkbox" name="material"> Wood<br>
-      <input type="checkbox" name="material"> Metal<br>
-      <input type="checkbox" name="material"> Other<br>
+      <input type="checkbox" id="matWood" name="material"> Wood<br>
+      <input type="checkbox" id="matMetal" name="material"> Metal<br>
+      <input type="checkbox" id="matOther" name="material"> Other<br>
       </form>
     <p class="menu">Style</p>
      <form>
-      <input type="checkbox" name="style"> Traditional<br>
-      <input type="checkbox" name="style"> Transitional<br>
-      <input type="checkbox" name="style"> Modern<br>
-      <input type="checkbox" name="style"> Outdoor<br>
+      <input type="checkbox" id="styTraditional" name="style"> Traditional<br>
+      <input type="checkbox" id="styTransitional" name="style"> Transitional<br>
+      <input type="checkbox" id="styModern" name="style"> Modern<br>
+      <input type="checkbox" id="styOutdoor" name="style"> Outdoor<br>
       </form>
     <p class="menu">Size</p> 
      <form>
@@ -131,9 +131,16 @@
        
         <form ng-submit="search">
 
-         <div ng-repeat="(key, value) in myData | filter: test">{{value}}</div>
+         <div ng-repeat="(key, value) in myData | filter: test">{{value['name']}}
+         {{value['type']}}
+         {{value['size']}}
+         {{value['image']}}</div>
         <br>
         <br>
+
+        <p>{{selections}}</p>
+        <p>{{objSelections}}</p>
+
         <!--{{myData.tables[2].type}} -->
 
         {{myData.size}}

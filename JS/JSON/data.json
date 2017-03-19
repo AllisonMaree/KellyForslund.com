@@ -5,7 +5,8 @@
 		"shape": "rectangle",
 		"size": "large",
 		"style": "modern",
-		"material":"wood"
+		"material":"wood",
+		"image":"http://placehold.it/350x150"
 		
 	},
 	{
