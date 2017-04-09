@@ -1,0 +1,36 @@
+var isCheckedList = {}; // master list of selections true or false
+var customerPreference = []; // list of all TRUE selections
+var masterList = {}; // list of furntiure that matches TRUE selections
+
+function createCustomerList {
+
+Re-do isCheckedList, repopulate customerPreference list
+
+function createCustomerList(needles, haystack){ 
+  for(var i = 0 , len = needles.length; i < len; i++){
+     if($.inArray(needles[i], haystack) == -1) return false;
+  }
+  return true;
+  Add to masterList
+}
+
+
+
+	if box/button is:checked = TRUE, then
+		add name of box/button to customerPreference array. 
+	
+}
+
+on SUBMIT,
+
+Run function createCustomerList
+
+Iterate each name in customerPreference against Json data. 
+	If customerPreferenceList name == json object parameter then,
+		check to see if next array item is in same Json object
+			if not
+
+
+wood, small, traditional
+			
+			
