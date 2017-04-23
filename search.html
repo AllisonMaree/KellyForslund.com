@@ -1,7 +1,7 @@
 
 <!doctype=html5>
 
-<html ng-app="myApp">
+<html>
 
 <head>
 
@@ -22,14 +22,24 @@
 
     <!-- ANGULAR JS Script -->
 
-    <script type="text/javascript" src="https://opensource.keycdn.com/angularjs/1.6.2/angular.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>     
+    
 
-    <script src="JS/script.js"></script>
+ <script src="JS/controllers.js"</script>
 
-    <script src="JS/controllers.js"</script>
 
+ 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js
+"></script>
+
+   <script src="JS/script.js"></script>
+   <script src="JS/service.js"></script>
+
+  
+
 
 
     <meta charset="utf-8">
@@ -37,10 +47,9 @@
 
 </head>
 
-<body>
+<body ng-app="myApp">
 
 <!-- BANNER AND NAVIGATION -->
-
     <div class="container-fluid">
         <div class="row">
            
@@ -117,25 +126,10 @@
 
     <div class="col-md-9" id="resultsdiv" ng-controller="myController">
       <h3>Table Search</h3>
+
         
        
         <form ng-submit="search">
-
-         <div ng-repeat="(key, value) in myData | filter: test">
-         {{value['name']}}
-         {{value['type']}}
-         {{value['size']}}
-         {{value['image']}}</div>
-        <br>
-        <br>
-
-        <p>{{objSelections}}</p>
-
-        <!--{{myData.tables[2].type}} -->
-
-        {{myData.size}}
-
-        <div>{{error}}</div>
 
         <input type="search" name='testinput' placeholder="I am searching for...."ng-model="test"/>
         <input type="submit" name='testsubmit' ng-click="search()" />

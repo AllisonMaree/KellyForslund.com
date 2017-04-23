@@ -1,94 +1,145 @@
- var app = angular.module('myApp', []);
+angular.module('myApp', [])
+    .service('myService', ['$scope', function ($scope) {
 
- app.controller('myController', function($scope, $http) {
+        return {
+            query: function() {
+               alert('test');
+            }
+        };
 
-       var isCheckedObj = {}
-       var masterList = []
-
-
-// CREATE MASTER BOOLEAN lIST OF PARAMETERS //
-
-		var isChecked = function() {
-
-   			isCheckedObj.material = {
-                  "Wood" : $("#matWood").is(':checked'),
-                  "Metal":$("#matMetal").is(':checked'),
-                  "Other" :$("#matOther").is(':checked')
-              }
-
-              isCheckedObj.style = {
-                  "Traditional" : $("#styTraditional").is(':checked'),
-                  "Transitional":$("#styTransitional").is(':checked'),
-                  "Modern":$("#styModern").is(':checked'),
-                  "Outdoor":$("#styOutdoor").is(':checked')
-              }
-               isCheckedObj.size = {
-                  "small" :$("#sizeSmall").is(':checked'),
-                  "medium":$("#sizeMedium").is(':checked'),
-                  "large" :$("#sizeLarge").is(':checked'),
-              }
-                isCheckedObj.leadtime = {
-                  "quickship":$("#leadtimeQuickship").is(':checked'),
-                  "standard":$("#leadtimeStandard").is(':checked'),
-              }
-
-           };
-
-
-// CREATE LIST OF PARAMETERS = "TRUE" //
-
-
-		var customerPreference = function() {
-
-			isChecked();
-
-			var objLength = Object.keys(isCheckedObj).length;
-
-			console.log("Initial object: " + isCheckedObj);
-			
-			for(i = 0; i < objLength; i++){
-
-				Object.keys(isCheckedObj).forEach(function(key) {
-					if (!isCheckedObj[key]) delete isCheckedObj[key];
-				});
-
-				// console.log(Object.keys(isCheckedObj));
-
-				console.log("edited object: " + isCheckedObj);			
-     		 	
-}
-}
-
-			//console.log(Object.values(masterList));
+    }])
+    .controller('myController', ['$scope', 'myService', function ($scope, myService) {
+        myService.query();
+    }]);
+    
 
 
 
- 		var onDataComplete = function(response){
+//var app = angular.module('myApp', []);
 
- 			$scope.myData = response.data; 		
+// $(document).ready(function() {
+
+	
+
+// 	var hot=[];
+
+
+// 	$.getJSON('/KellyForslund.com/JS/JSON/data.json', function(data){
+
+		
+
+// 		console.log("The date from script.js is " + data);
+
+// });
+
+// app.service('myService', ['$scope', function($scope) {
+// 	this.myNumber = 5;
+
+
+// 	this.myService = 3;
+
+// 	return {
+// 		mySum: this.myService + this.myNumber
+// 	}
+
+// }]);
+
+
+
+
+//  app.controller('myController', ['$scope','myService', function($scope, myServices) {
+
+//  	$scope.mySum = myService.mySum;
+
+//  	console.log(mySum);
+
+
+//        var isCheckedObj = {}
+//        var masterList = []
+
+
+// // CREATE MASTER BOOLEAN lIST OF PARAMETERS //
+
+// 		var isChecked = function() {
+
+//    			isCheckedObj.material = {
+//                   "Wood" : $("#matWood").is(':checked'),
+//                   "Metal":$("#matMetal").is(':checked'),
+//                   "Other" :$("#matOther").is(':checked')
+//               }
+
+//               isCheckedObj.style = {
+//                   "Traditional" : $("#styTraditional").is(':checked'),
+//                   "Transitional":$("#styTransitional").is(':checked'),
+//                   "Modern":$("#styModern").is(':checked'),
+//                   "Outdoor":$("#styOutdoor").is(':checked')
+//               }
+//                isCheckedObj.size = {
+//                   "small" :$("#sizeSmall").is(':checked'),
+//                   "medium":$("#sizeMedium").is(':checked'),
+//                   "large" :$("#sizeLarge").is(':checked'),
+//               }
+//                 isCheckedObj.leadtime = {
+//                   "quickship":$("#leadtimeQuickship").is(':checked'),
+//                   "standard":$("#leadtimeStandard").is(':checked'),
+//               }
+
+//            };
+
+
+// // CREATE ARRAY OF PARAMETERS = "TRUE" //
+
+
+// 		var customerPreference = function() {
+
+// 			isChecked();
+
+// 			_.each(isCheckedObj.material, function(val,key) {
+// 				if (val) {
+// 					masterList.push(key);
+// 				}
+// 			});
+// 			_.each(isCheckedObj.size, function(val,key) {
+// 				if (val) {
+// 					masterList.push(key);
+// 				}
+// 			});
+// 			_.each(isCheckedObj.style, function(val,key) {
+// 				if (val) {
+// 					masterList.push(key);
+// 				}
+// 			});
+// 			_.each(isCheckedObj.leadtime, function(val,key) {
+// 				if (val) {
+// 					masterList.push(key);
+// 				}
+// 			});
+
+// 			console.log(masterList);
+
+// 		};
+
+
+//  		var onDataComplete = function(response){
+
+//  			$scope.myData = response.data; 		
  	
- 		};
+//  		};
 
- 		var onResponse = function(response){
- 			console.log("onResponse works");
- 		};
+ 		
+//  		$scope.search = function(response) {
 
- 		var onError = function(reason){
- 			$scope.error="could not load data";
- 		}
+//           	$http.get("/KellyForslund.com/JS/JSON/data.json")
 
- 		$scope.search = function(data) {
+//           	onDataComplete();
 
-          	$http.get("/KellyForslund.com/JS/JSON/data.json")
- 			 .then(onDataComplete, onError);
+          	
+//  			 customerPreference();
 
- 			 customerPreference();
+//  		};
+	
+// }]);
 
- 		};
-
-	});
-
-
-
+// //});
 	
 
